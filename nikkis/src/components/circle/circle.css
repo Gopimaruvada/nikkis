@@ -1,0 +1,48 @@
+.circle {
+	width: 3.125rem;
+	height: 3.125rem;
+	border-radius: 50%;
+	background: linear-gradient(90deg, #1b3860, #5a7dab);
+	box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+@media (min-width: 1200px) {
+	.circle {
+		width: 5.625rem;
+		height: 5.625rem;
+	}
+	.circle-xs {
+		width: 3.125rem;
+		height: 3.125rem;
+	}
+	.circle-sm {
+		width: 3.75rem;
+		height: 3.75rem;
+	}
+	.circle-md,
+	.circle-lg,
+	.circle-xl,
+	.circle-xxl {
+		width: 5rem;
+		height: 5rem;
+	}
+}
+
+@media (min-width: 1600px) {
+	.circle-md {
+		width: 5rem;
+		height: 5rem;
+	}
+	.circle-lg {
+		width: 5.9375rem;
+		height: 5.9375rem;
+	}
+	.circle-xl {
+		width: 7.5rem;
+		height: 7.5rem;
+	}
+	.circle-xxl {
+		width: 8.1875rem;
+		height: 8.1875rem;
+	}
+}

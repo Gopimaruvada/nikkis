@@ -1,0 +1,60 @@
+.link {
+	position: relative;
+	display: inline-block;
+}
+
+.link-active {
+	color: #26446c;
+}
+
+.link-inherit {
+	color: inherit;
+}
+
+.link-inherit:hover {
+	color: #26446c;
+}
+
+.link-dark {
+	color: #151515;
+}
+
+.link-dark:hover {
+	color: #26446c;
+}
+
+.link-info {
+	color: #151515;
+}
+
+.link-info:hover {
+	color: #00B3FF;
+}
+
+.link-info-gray {
+	color: #a7a7a7;
+}
+
+.link-info-gray:hover {
+	color: #00B3FF;
+}
+
+.link-btn {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: #151515;
+	transition: all 0.2s ease-in-out;
+}
+
+.link-btn:hover {
+	color: #ff7a00;
+}
+
+.link-btn-info:hover {
+	color: #00B3FF;
+}
+
+.link-group > * {
+	display: block;
+}

@@ -1,0 +1,90 @@
+.progress-linear {
+	position: relative;
+	text-align: left;
+	margin-right: 0.625rem;
+}
+
+.progress-linear-title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.progress-linear-title,
+.progress-linear-counter-wrap {
+	font-size: 1.125rem;
+	font-weight: 400;
+	color: #151515;
+}
+
+.progress-linear-body {
+	height: 0.5rem;
+	border-radius: 0.2rem;
+	background-color: #e5e5e5;
+}
+
+.progress-linear-bar {
+	position: relative;
+	width: 0;
+	height: inherit;
+	background: #1b3860;
+	border-radius: inherit;
+	transition: 1s all ease-in-out;
+}
+
+.progress-linear-bar::after {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	height: 0.5rem;
+	width: 0.5rem;
+	content: '';
+	background: #1b3860;
+	border: 0.375rem solid #fff;
+	border-radius: 50%;
+	box-sizing: content-box;
+	transform: translate(50%, -50%);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.progress-linear-counter-wrap {
+	position: absolute;
+	right: 0;
+	bottom: calc( 100% + 0.375rem);
+	transform: translateX(50%);
+}
+
+.progress-linear-counter-wrap {
+	opacity: 0;
+	transition: .2s .4s;
+}
+
+.progress-linear-counter-wrap.loaded {
+	opacity: 1;
+}
+
+* + .progress-linear-container {
+	margin-top: 1.875rem;
+}
+
+.progress-linear + .progress-linear {
+	margin-top: 1.25rem;
+}
+
+* + .progress-linear-body {
+	margin-top: 0.375rem;
+}
+
+@media (min-width: 992px) {
+	* + .progress-linear-container {
+		margin-top: 2.5rem;
+	}
+	.progress-linear + .progress-linear {
+		margin-top: 1.8125rem;
+	}
+}
+
+@media (min-width: 1600px) {
+	.progress-linear {
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,1 @@
+.rating {	font-size: 1.125rem;	line-height: 1;	color: #ffd600;	margin-bottom: -0.0625rem;	margin-left: -0.0625rem;}.rating:empty {	margin-bottom: 0;	margin-left: 0;}.rating > * {	margin-top: 0;	margin-bottom: 0.0625rem;	margin-left: 0.0625rem;}.rating-md {	font-size: 1.5rem;}.rating-item-disabled {	color: #e5e5e5;}* + .rating {	margin-top: 0.875rem;}

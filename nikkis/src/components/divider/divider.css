@@ -1,0 +1,1 @@
+.divider {	display: block;	font-size: 0;	line-height: 0;}.divider:before {	content: "";	display: inline-block;	margin-top: 0;	margin-bottom: 0;	border-top: 1px solid #e5e5e5;}.divider-1:before {	width: 100%;}
